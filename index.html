@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AG Florida Group - Wholesale Distribution</title>
+    <title>AG Florida Group — Wholesale Distribution</title>
+    <meta name="description" content="AG Florida Group is a professional wholesale distributor based in Florida, serving retailers across the United States with authentic products across 15+ categories.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Top Accent Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>Wholesale inquiries: <a href="mailto:info@agfloridagroup.com">info@agfloridagroup.com</a></span>
+            <span>Florida, United States</span>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">AG <span>Florida Group</span></a>
-            <ul class="nav-links">
+            <a href="#" class="logo">
+                <span class="logo-mark">AG</span>
+                <span class="logo-text">Florida Group</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#categories">Categories</a></li>
                 <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#contact" class="btn btn-nav">Contact Us</a></li>
+                <li><a href="#contact" class="btn btn-nav">Get in Touch</a></li>
             </ul>
-            <button class="mobile-toggle" aria-label="Toggle menu">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -28,39 +41,77 @@
 
     <!-- Hero Section -->
     <header class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>Your Trusted Wholesale Distribution Partner in Florida</h1>
-            <p>AG Florida Group connects brands and distributors with high-volume retail channels across the United States. Reliable sourcing, competitive pricing, and professional service.</p>
+            <div class="hero-badge">Authorized Wholesale Distribution</div>
+            <h1>Your Trusted<br>Distribution Partner<br>in <span class="text-accent">Florida</span></h1>
+            <p>We connect brands and authorized distributors with high-volume retail channels across the United States. Reliable sourcing, competitive pricing, professional service.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Start a Partnership</a>
-                <a href="#categories" class="btn btn-outline">View Categories</a>
+                <a href="#categories" class="btn btn-ghost">Explore Categories</a>
             </div>
         </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
     </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Product Categories</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">USA</span>
+                <span class="stat-label">Nationwide Distribution</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Authentic Products</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">FL</span>
+                <span class="stat-label">Based in Florida</span>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="section about">
         <div class="container">
             <div class="section-header">
-                <h2>About AG Florida Group</h2>
-                <p class="section-subtitle">Professional wholesale distribution based in Florida</p>
+                <span class="section-tag">Who We Are</span>
+                <h2>Professional Wholesale<br>Distribution You Can Trust</h2>
+                <p class="section-subtitle">AG Florida Group works directly with brands and authorized distributors to deliver authentic, competitively priced products to retailers across the country.</p>
             </div>
             <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon">&#9878;</div>
-                    <h3>Authorized Distribution</h3>
-                    <p>We work directly with brands and authorized distributors to ensure authentic, compliant product sourcing for every order.</p>
+                <div class="about-card" data-animate>
+                    <div class="about-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Authorized Sourcing</h3>
+                    <p>Every product is sourced through verified, authorized channels with full documentation and invoicing for complete compliance.</p>
                 </div>
-                <div class="about-card">
-                    <div class="about-icon">&#9733;</div>
+                <div class="about-card" data-animate>
+                    <div class="about-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="22" height="18" rx="2"/><line x1="1" y1="9" x2="23" y2="9"/></svg>
+                    </div>
                     <h3>Multi-Category Expertise</h3>
-                    <p>From home goods to pet supplies, we cover 15+ product categories with deep market knowledge and reliable supply chains.</p>
+                    <p>From home goods to automotive parts, we cover 15+ product categories with deep market knowledge and reliable supply chains.</p>
                 </div>
-                <div class="about-card">
-                    <div class="about-icon">&#10140;</div>
-                    <h3>Scalable Fulfillment</h3>
-                    <p>Whether you need 10 units or 10,000, our logistics infrastructure scales with your business needs.</p>
+                <div class="about-card" data-animate>
+                    <div class="about-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h3>Scalable Volume</h3>
+                    <p>Whether you need 10 units or 10,000, our infrastructure and distributor relationships scale with your business needs.</p>
                 </div>
             </div>
         </div>
@@ -70,68 +121,99 @@
     <section id="categories" class="section categories">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">What We Distribute</span>
                 <h2>Product Categories</h2>
-                <p class="section-subtitle">We distribute across a wide range of consumer and commercial product categories</p>
+                <p class="section-subtitle">We distribute across a wide range of consumer and commercial product categories, all sourced from authorized channels.</p>
             </div>
             <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-icon">&#127968;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
                     <h3>Home & Kitchen</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#128221;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </div>
                     <h3>Office Products</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#9917;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                    </div>
                     <h3>Sports & Outdoors</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#127793;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
                     <h3>Patio, Lawn & Garden</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#9881;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
                     <h3>Industrial & Scientific</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#127912;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
                     <h3>Arts, Crafts & Sewing</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#128295;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
                     <h3>Tools & Home Improvement</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#128663;</div>
-                    <h3>Automotive Parts & Accessories</h3>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3>Automotive Parts</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#127928;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    </div>
                     <h3>Musical Instruments</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#128218;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    </div>
                     <h3>Books</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#128247;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    </div>
                     <h3>Camera & Photo</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#128062;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"/><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75z"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a13.152 13.152 0 0 0-.42-3.309"/></svg>
+                    </div>
                     <h3>Pet Supplies</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#128118;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg>
+                    </div>
                     <h3>Baby</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#127922;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
                     <h3>Toys & Games</h3>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">&#127828;</div>
+                <div class="category-card" data-animate>
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    </div>
                     <h3>Grocery & Gourmet</h3>
                 </div>
             </div>
@@ -142,30 +224,42 @@
     <section id="why-us" class="section why-us">
         <div class="container">
             <div class="section-header">
-                <h2>Why Partner With Us</h2>
-                <p class="section-subtitle">We make wholesale distribution simple, transparent, and profitable</p>
+                <span class="section-tag">Our Advantage</span>
+                <h2>Why Partner With<br>AG Florida Group</h2>
+                <p class="section-subtitle">We make wholesale distribution simple, transparent, and profitable for your business.</p>
             </div>
             <div class="why-grid">
-                <div class="why-card">
+                <div class="why-card" data-animate>
                     <span class="why-number">01</span>
                     <h3>Competitive Wholesale Pricing</h3>
-                    <p>Direct relationships with brands and manufacturers mean better margins for your business.</p>
+                    <p>Direct relationships with brands and manufacturers mean consistently better margins for your business.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card" data-animate>
                     <span class="why-number">02</span>
                     <h3>Verified Authentic Products</h3>
-                    <p>Every product is sourced through authorized channels with full documentation and invoicing.</p>
+                    <p>Every product is sourced through authorized channels with full documentation, invoicing, and chain-of-custody compliance.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card" data-animate>
                     <span class="why-number">03</span>
                     <h3>Fast & Reliable Shipping</h3>
-                    <p>Strategically located in Florida for efficient distribution across the continental United States.</p>
+                    <p>Strategically located in Florida for efficient distribution to retailers across the continental United States.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card" data-animate>
                     <span class="why-number">04</span>
                     <h3>Dedicated Account Support</h3>
-                    <p>A real person manages your account — responsive communication and proactive problem solving.</p>
+                    <p>A real person manages your account with responsive communication and proactive problem solving.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Ready to Grow Your Product Catalog?</h2>
+                <p>Partner with AG Florida Group for reliable, authorized wholesale distribution across 15+ product categories.</p>
+                <a href="#contact" class="btn btn-primary btn-large">Start a Conversation</a>
             </div>
         </div>
     </section>
@@ -174,30 +268,52 @@
     <section id="contact" class="section contact">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
                 <h2>Start a Wholesale Partnership</h2>
-                <p class="section-subtitle">Ready to grow your product catalog? Get in touch with our team.</p>
+                <p class="section-subtitle">Reach out to discuss product availability, pricing, and how we can serve your business.</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <a href="mailto:info@agfloridagroup.com">info@agfloridagroup.com</a>
+                    <div class="contact-item" data-animate>
+                        <div class="contact-icon-wrap">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:info@agfloridagroup.com">info@agfloridagroup.com</a>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>Phone</h3>
-                        <a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a>
+                    <div class="contact-item" data-animate>
+                        <div class="contact-icon-wrap">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>Florida, United States</p>
+                    <div class="contact-item" data-animate>
+                        <div class="contact-icon-wrap">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Florida, United States</p>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>Hours</h3>
-                        <p>Monday – Friday, 9:00 AM – 5:00 PM EST</p>
+                    <div class="contact-item" data-animate>
+                        <div class="contact-icon-wrap">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday – Friday, 9 AM – 5 PM EST</p>
+                        </div>
                     </div>
                 </div>
                 <div class="contact-cta">
-                    <p>For wholesale inquiries, new account setup, or product availability, email us directly at:</p>
+                    <h3>Wholesale Inquiries</h3>
+                    <p>For new account setup, product availability, pricing, and partnership opportunities, reach out to our team directly.</p>
                     <a href="mailto:info@agfloridagroup.com" class="btn btn-primary btn-large">info@agfloridagroup.com</a>
                 </div>
             </div>
@@ -206,16 +322,28 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <a href="#" class="logo">AG <span>Florida Group</span></a>
-                <p>Professional wholesale distribution across the United States.</p>
-            </div>
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#categories">Categories</a>
-                <a href="#why-us">Why Us</a>
-                <a href="#contact">Contact</a>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-mark">AG</span>
+                        <span class="logo-text">Florida Group</span>
+                    </a>
+                    <p>Professional wholesale distribution across the United States.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <a href="#about">About</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#why-us">Why Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-nav">
+                    <h4>Contact</h4>
+                    <a href="mailto:info@agfloridagroup.com">info@agfloridagroup.com</a>
+                    <span>Florida, United States</span>
+                    <span>Mon–Fri, 9 AM – 5 PM EST</span>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 AG Florida Import X LLC. All rights reserved.</p>

@@ -1,6 +1,6 @@
 // Mobile menu toggle
-const toggle = document.querySelector('.mobile-toggle');
-const navLinks = document.querySelector('.nav-links');
+const toggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
 
 toggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
@@ -13,12 +13,26 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Navbar background on scroll
-const navbar = document.querySelector('.navbar');
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
-    } else {
-        navbar.style.boxShadow = 'none';
-    }
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Scroll-in animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+});
+
+document.querySelectorAll('[data-animate]').forEach((el, i) => {
+    el.style.transitionDelay = `${(i % 5) * 80}ms`;
+    observer.observe(el);
 });
