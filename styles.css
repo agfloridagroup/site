@@ -586,7 +586,7 @@ em {
 .cta-bg {
     position: absolute;
     inset: 0;
-    background: url('hero.jpg') center/cover no-repeat;
+    background: url('cta-bg.jpg') center/cover no-repeat;
 }
 
 .cta-overlay {
