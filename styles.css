@@ -586,13 +586,13 @@ em {
 .cta-bg {
     position: absolute;
     inset: 0;
-    background: url('cta-bg.jpg') center/cover no-repeat;
+    background: var(--black);
 }
 
 .cta-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(10,10,10,0.88);
+    background: linear-gradient(135deg, var(--black) 0%, #1a1510 100%);
 }
 
 .cta-content {
