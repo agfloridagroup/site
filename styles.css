@@ -342,16 +342,17 @@ img {
 
 /* === Stats Bar === */
 .stats-bar {
-    background: var(--bg);
-    padding: 48px 0;
-    border-bottom: 1px solid var(--border);
+    background: var(--primary);
+    padding: 56px 0;
+    border-top: 1px solid rgba(200, 160, 74, 0.15);
+    border-bottom: 1px solid rgba(200, 160, 74, 0.15);
 }
 
 .stats-grid {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 48px;
+    gap: 56px;
 }
 
 .stat-item {
@@ -361,23 +362,25 @@ img {
 .stat-number {
     display: block;
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    color: var(--primary);
+    color: var(--accent);
     letter-spacing: -1px;
     line-height: 1.2;
 }
 
 .stat-label {
-    font-size: 0.82rem;
-    color: var(--text-light);
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
     font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .stat-divider {
     width: 1px;
-    height: 40px;
-    background: var(--border);
+    height: 48px;
+    background: rgba(255,255,255,0.1);
 }
 
 /* === Sections === */
