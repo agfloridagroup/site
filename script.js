@@ -1,25 +1,28 @@
-// Mobile menu toggle
+// Mobile menu
 const toggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
 
-toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+toggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+document.querySelectorAll('.nav-links a').forEach(link =>
+    link.addEventListener('click', () => navLinks.classList.remove('active'))
+);
 
-// Close mobile menu on link click
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-    });
-});
-
-// Navbar scroll effect
+// Navbar scroll
 const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () =>
+    navbar.classList.toggle('scrolled', window.scrollY > 80)
+);
+
+// Parallax hero background
+const heroBg = document.querySelector('.hero-bg');
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
+    const y = window.scrollY;
+    if (y < window.innerHeight) {
+        heroBg.style.transform = `scale(1.1) translateY(${y * 0.15}px)`;
+    }
 });
 
-// Scroll-in animations
+// Scroll animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -27,12 +30,9 @@ const observer = new IntersectionObserver((entries) => {
             observer.unobserve(entry.target);
         }
     });
-}, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -40px 0px'
-});
+}, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
 document.querySelectorAll('[data-animate]').forEach((el, i) => {
-    el.style.transitionDelay = `${(i % 5) * 80}ms`;
+    el.style.transitionDelay = `${(i % 4) * 100}ms`;
     observer.observe(el);
 });
