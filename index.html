@@ -259,7 +259,7 @@
                         </div>
                         <div class="contact-row">
                             <span class="contact-label">Phone</span>
-                            <a href="tel:+1XXXXXXXXXX" class="contact-value">(XXX) XXX-XXXX</a>
+                            <a href="tel:+18444060099" class="contact-value">(844) 406-0099</a>
                         </div>
                         <div class="contact-row">
                             <span class="contact-label">Location</span>
@@ -270,6 +270,18 @@
                             <span class="contact-value">Mon – Fri, 9 AM – 5 PM EST</span>
                         </div>
                         <a href="mailto:info@agfloridagroup.com" class="btn btn-primary" style="margin-top: 24px; width: 100%; text-align: center;">Send Us an Email</a>
+                    </div>
+                    <div class="contact-card sms-opt-in" style="margin-top: 24px;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Stay Updated via Text</h3>
+                        <form id="sms-consent-form" onsubmit="handleSmsConsent(event)">
+                            <input type="tel" id="sms-phone" placeholder="+1 (XXX) XXX-XXXX" required style="width: 100%; padding: 12px 16px; font-size: 1rem; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; background: rgba(255,255,255,0.05); color: #fff; margin-bottom: 12px;">
+                            <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.8rem; color: rgba(255,255,255,0.55); line-height: 1.5; cursor: pointer;">
+                                <input type="checkbox" required style="margin-top: 3px; flex-shrink: 0;">
+                                By providing your phone number, you consent to receive text messages from AG Florida Group regarding order updates and wholesale inquiries. Message and data rates may apply. Reply STOP to unsubscribe.
+                            </label>
+                            <button type="submit" class="btn btn-primary" style="margin-top: 16px; width: 100%; text-align: center;">Subscribe to Updates</button>
+                        </form>
+                        <p id="sms-success" style="display:none; color: #2ecc71; margin-top: 12px; font-size: 0.9rem;">Thank you! You've been subscribed.</p>
                     </div>
                 </div>
             </div>
@@ -298,6 +310,7 @@
                     <div class="footer-col">
                         <h4>Contact</h4>
                         <a href="mailto:info@agfloridagroup.com">info@agfloridagroup.com</a>
+                        <a href="tel:+18444060099">(844) 406-0099</a>
                         <span>Florida, United States</span>
                         <span>Mon–Fri, 9 AM – 5 PM EST</span>
                     </div>

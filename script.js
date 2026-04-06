@@ -36,3 +36,12 @@ document.querySelectorAll('[data-animate]').forEach((el, i) => {
     el.style.transitionDelay = `${(i % 4) * 100}ms`;
     observer.observe(el);
 });
+
+// SMS consent form
+function handleSmsConsent(e) {
+    e.preventDefault();
+    const form = document.getElementById('sms-consent-form');
+    const success = document.getElementById('sms-success');
+    form.style.display = 'none';
+    success.style.display = 'block';
+}
